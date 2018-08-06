@@ -3,9 +3,10 @@ Pathology_Analysis
 
 # files
 ./read: take network.bin and generate data.csv  
-./Preprocess.ipynb: Use all 1430 pos and sample 2860 neg to generate 3300 (train) + 990 (test) dataset split.  
+./Preprocess.ipynb: Generate splits. Use all 1430 pos and sample 2860 neg to generate 3300 (train) + 990 (test) dataset split.  
 ./resnet/go.sh: train from scratch and show the result  
 ./resnet/go_transfer.sh: transfer from pre-trained model on cifar10 and train the model for target pathology data  
+./vis.ipynb: visualize the result (from logs under ./resnet/checkpoint)
 
 # bash usage 
 (under the resnet folder) (dependency: pytorch)  
