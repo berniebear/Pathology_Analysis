@@ -18,16 +18,15 @@ Please try python main.py -h
 
 PyTorch cifar10 for pathology  
 
->optional arguments:
->  -h, --help            show this help message and exit  
->  --lr LR               learning rate  
->  --lr_step             lr_step  
->  --epoch EPOCH         epoch  
->  --resume, -r          resume from checkpoint  
->  --sp SP               splits  
->  --img_dir             img dir  
->  --id ID               model id  
->  --transfer            transfer to new task with pretrained  
->  --pretrained          the pretrained model  
+>  -h:            show this help message and exit  
+>  --lr:               learning rate  
+>  --lr_step:             lr_step  
+>  --epoch:         epoch  
+>  --r:          resume from checkpoint  
+>  --sp:               splits  
+>  --img_dir:             img dir  
+>  --id:               model id  
+>  --transfer:          transfer to new task with pretrained  
+>  --pretrained:         the pretrained model  
 
 
