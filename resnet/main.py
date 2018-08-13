@@ -65,8 +65,8 @@ start_epoch = 0  # start from epoch 0 or last checkpoint epoch
 # Data
 print('==> Preparing data..')
 transform_train = transforms.Compose([
-    transforms.RandomCrop(64, padding=4),
-    transforms.RandomHorizontalFlip(),
+    #transforms.RandomCrop(64, padding=4),
+    #transforms.RandomHorizontalFlip(),
     transforms.ToTensor(),
     transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
 ])
@@ -78,7 +78,7 @@ transform_test = transforms.Compose([
 
 trainset = pathology_dataset(os.path.join('../splits', 'sp' + str(args.sp), 'tr_lst'), args.img_dir, transform_train)
 #trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform_train)
-trainloader = DataLoader(trainset, batch_size=128, shuffle=True, num_workers=2)
+trainloader = DataLoader(trainset, batch_size=100, shuffle=True, num_workers=2)
 
 testset = pathology_dataset(os.path.join('../splits', 'sp' + str(args.sp), 'tt_lst'), args.img_dir, transform_test)
 #testset = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform_test)
